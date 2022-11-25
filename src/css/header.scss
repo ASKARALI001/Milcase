@@ -1,0 +1,100 @@
+.header{
+  &__top{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-desc{
+      @include text(400, 14px, 150%, $pur);
+    }
+    &-num{
+      @include text(700, 18px, 150%, $pur);
+    }
+    &-logo{
+      padding: 7px 15px;
+      background: #EE82EE;
+      border-radius:  25px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      transition: .2s;
+      &:hover{
+        border: 1px solid #EE82EE;
+        transition: .2s;
+        transform: scale(1.04);
+
+      }
+    }
+
+    &-title{
+      @include text(700, 30px, 150%, #fff);
+      text-transform: uppercase;
+    }
+    &-items{
+      display: flex;
+      column-gap: 20px;
+      &-list{
+        @include text(400, 12px, 150%, $pur);
+        cursor: pointer;
+        transition: .2s;
+        &:hover{
+          color: #EE82EE;
+          transition: .2s;
+        }
+      }
+    }
+    &-basket{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    &-input{
+      width: 50px;
+      border-radius:  5px;
+      border: 1px solid #CEB3CB;
+      padding-left: 4px;
+      @include text(400, 12px, 150%, $pur);
+      cursor: pointer;
+    }
+    &-star{
+      @include text(400, 16px, 150%, $pur);
+      cursor: pointer ;
+    }
+    &-car{
+      @include text(400, 16px, 150%, $pur);
+      cursor: pointer;
+    }
+    &-form{
+      display: flex;
+    }
+    &-star{
+      display: flex;
+    }
+    &-car{
+      display: flex;
+    }
+  }
+  &__nav{
+    &-img{
+      width: 50px;
+    }
+  }
+  &__menu{
+    background: #EE82EE;
+    padding: 10px 20px;
+    &-items{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-list{
+        @include text(400, 18px, 150%, #fff);
+        cursor: pointer;
+        transition: .2s;
+        &:hover{
+          color: $pur;
+          transition: .2s;
+        }
+      }
+    }
+  }
+}
+

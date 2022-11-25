@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img{
+  width: 100%;
+}
+
+$pur : #CEB3CB;
+
+@mixin text($fw, $fs, $lh, $col) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $col;
+}
+
+
+@import "header";
+@import "swiper";
+@import "cards";
+
