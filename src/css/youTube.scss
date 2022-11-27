@@ -1,0 +1,15 @@
+.youTube{
+  background: #f1f1f1;
+  padding-top:50px ;
+  &__title{
+    text-align: center;
+    @include text(700, 26px , 150%, #EE82EE);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  &__video{
+    margin: 0 auto;
+  }
+
+}

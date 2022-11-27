@@ -1,0 +1,52 @@
+.bestsellers{
+  padding: 50px;
+  background: #f1f1f1;
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    &-card{
+      padding: 20px;
+      background: #FFFFFF;
+      border-radius: 30px;
+      transition: .2s;
+      z-index: 100;
+      &:hover{
+        border: 1px solid #EE82EE;
+        box-shadow:0 14px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 30px;
+        transform: scale(1.06);
+        transition: .2s;
+        cursor: pointer;
+
+      }
+      &-svgs{
+        text-align: right;
+      }
+      &-desc{
+        @include text(600, 16px, 150%, #EE82EE);
+        margin: 20px 0 8px;
+      }
+      &-info{
+        display: flex;
+        justify-content: right;
+      }
+      &-sum:first-child{
+        @include text(700, 16px, 150%, red);
+      }
+      &-sum, .bestsellers__cards-card-span{
+        @include text(400, 16px, 150%, #EE82EE);
+      }
+
+    }
+  }
+}
+
+.swiper-slide {
+  border-radius: 30px;
+}
+
+.swiper-button-next,.swiper-button-prev{
+  color: #EE82EE;
+}
