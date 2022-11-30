@@ -1,10 +1,10 @@
 .youTube{
-  background: #f1f1f1;
+  background: #FFFFFF;
   padding-top:50px ;
   &__title{
     text-align: center;
     @include text(700, 26px , 150%, #EE82EE);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-transform: uppercase;
   }
 

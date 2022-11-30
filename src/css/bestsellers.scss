@@ -1,6 +1,6 @@
 .bestsellers{
-  padding: 50px;
-  background: #f1f1f1;
+  padding: 40px 0 0 ;
+  background: #FFFFFF;
   &__cards{
     display: flex;
     flex-wrap: wrap;
@@ -8,12 +8,13 @@
     row-gap: 30px;
     &-card{
       padding: 20px;
+      border: 1px solid $pur;
       background: #FFFFFF;
       border-radius: 30px;
       transition: .2s;
       z-index: 100;
       &:hover{
-        border: 1px solid #EE82EE;
+        border: 2px solid #EE82EE;
         box-shadow:0 14px 30px rgba(0, 0, 0, 0.05);
         border-radius: 30px;
         transform: scale(1.06);
@@ -30,15 +31,19 @@
       }
       &-info{
         display: flex;
-        justify-content: right;
+        justify-content: space-between;
       }
       &-sum:first-child{
+        @include text(400, 16px, 150%, $pur);
+
+      }
+      &-sum{
         @include text(700, 16px, 150%, red);
       }
-      &-sum, .bestsellers__cards-card-span{
+
+      .bestsellers__cards-card-span{
         @include text(400, 16px, 150%, #EE82EE);
       }
-
     }
   }
 }
@@ -49,4 +54,7 @@
 
 .swiper-button-next,.swiper-button-prev{
   color: #EE82EE;
+}
+.padding{
+  padding: 40px;
 }

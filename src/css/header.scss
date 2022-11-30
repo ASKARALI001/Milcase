@@ -35,10 +35,17 @@
       &-list{
         @include text(400, 12px, 150%, $pur);
         cursor: pointer;
+        padding: 2px 5px;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
         transition: .2s;
         &:hover{
-          color: #EE82EE;
+          background: #EE82EE;
+          padding: 2px 5px;
+          color: #FFFFFF;
           transition: .2s;
+          border: 1px solid #EE82EE;
+          border-radius: 10px;
         }
       }
     }

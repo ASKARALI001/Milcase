@@ -81,13 +81,20 @@ img {
   line-height: 150%;
   color: #CEB3CB;
   cursor: pointer;
+  padding: 2px 5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .header__top-items-list:hover {
-  color: #EE82EE;
+  background: #EE82EE;
+  padding: 2px 5px;
+  color: #FFFFFF;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  border: 1px solid #EE82EE;
+  border-radius: 10px;
 }
 .header__top-basket {
   display: -webkit-box;
@@ -300,7 +307,7 @@ img {
 }
 
 .youTube {
-  background: #f1f1f1;
+  background: #FFFFFF;
   padding-top: 50px;
 }
 .youTube__title {
@@ -309,7 +316,7 @@ img {
   font-size: 26px;
   line-height: 150%;
   color: #EE82EE;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 .youTube__video {
@@ -317,8 +324,8 @@ img {
 }
 
 .bestsellers {
-  padding: 50px;
-  background: #f1f1f1;
+  padding: 40px 0 0;
+  background: #FFFFFF;
 }
 .bestsellers__cards {
   display: -webkit-box;
@@ -333,6 +340,7 @@ img {
 }
 .bestsellers__cards-card {
   padding: 20px;
+  border: 1px solid #CEB3CB;
   background: #FFFFFF;
   border-radius: 30px;
   -webkit-transition: 0.2s;
@@ -340,7 +348,7 @@ img {
   z-index: 100;
 }
 .bestsellers__cards-card:hover {
-  border: 1px solid #EE82EE;
+  border: 2px solid #EE82EE;
   -webkit-box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
   border-radius: 30px;
@@ -364,17 +372,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .bestsellers__cards-card-sum:first-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CEB3CB;
+}
+.bestsellers__cards-card-sum {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   color: red;
 }
-.bestsellers__cards-card-sum, .bestsellers__cards-card .bestsellers__cards-card-span {
+.bestsellers__cards-card .bestsellers__cards-card-span {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -387,4 +401,8 @@ img {
 
 .swiper-button-next, .swiper-button-prev {
   color: #EE82EE;
+}
+
+.padding {
+  padding: 40px;
 }
